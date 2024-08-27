@@ -1,234 +1,138 @@
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-h1, h2, h3 {
-    color: #005F99; /* Azul serio y profesional */
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #A6E22E; /* Verde feliz */
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
-}
-
-.hero .btn-primary {
-    background-color: #005F99;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hero .hero-image {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
-/* About Section */
-.about {
-    padding: 50px 0;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Services Section */
-.services {
-    background-color: #F4F4F4;
-    padding: 50px 0;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.service img {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-/* Product Description Section */
-.product-description {
-    padding: 50px 0;
-}
-
-.product-description ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.product-description ul li {
-    padding: 10px 0;
-}
-
-.product-description img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Features Section */
-.features {
-    background-color: #A6E22E; /* Verde feliz */
-    color: #fff;
-    padding: 50px 0;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-/* Pricing Section */
-.pricing {
-    padding: 50px 0;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.pricing-plan {
-    border: 1px solid #ddd;
+header {
+    background-color: #004d40; /* Verde más feliz */
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
-.pricing-plan .btn-secondary {
-    background-color: #005F99;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-/* Testimonials Section */
-.testimonials {
-    background-color: #F4F4F4;
-    padding: 50px 0;
+header p {
+    margin: 0;
+    font-size: 1.2em;
 }
 
-.testimonial {
+.hero {
     text-align: center;
+    padding: 50px 0;
+    background-color: #e0f2f1; /* Verde más claro para la hero section */
+}
+
+.hero h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.testimonial span {
-    font-weight: bold;
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-/* FAQ Section */
-.faq {
-    padding: 50px 0;
+.cta-button {
+    background-color: #003c71; /* Azul serio y profesional */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #002c57;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.why-choose, .features, .pricing, .testimonials, .faq {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature {
+    margin-bottom: 20px;
+}
+
+.pricing .plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing .plan {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #003c71;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonials footer {
+    font-weight: bold;
 }
 
 .faq-item {
     margin-bottom: 20px;
 }
 
-/* Final CTA Section */
-.final-cta {
-    background-color: #005F99;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.final-cta .btn-primary {
-    background-color: #A6E22E;
-    color: #005F99;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 0;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #005F99;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer Section */
-.footer {
+footer {
     background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-.footer-links {
+footer a {
+    color: #e0f2f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
     list-style-type: none;
     padding: 0;
 }
 
-.footer-links li {
+footer ul li {
     display: inline;
-    margin-right: 10px;
-}
-
-.footer-links a {
-    color: #A6E22E;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
+    margin: 0 10px;
 }
